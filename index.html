@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Movies search</title>
+</head>
+<body>
+    <header>
+        <h1>Movies search </h1>
+
+    </header>
+    <main>
+        <button id="show-favorites" onclick="window.location.href='./favourite.html'">Show Favourites</button>
+
+        <section id="search-bar">
+            <input type="text" id="search-input" placeholder="Search for a movie">
+            <button id="search-button">Search</button>
+        </section>
+        <section id="movies">
+            <div id="movie-list" class="movies-section">
+              
+            </div>
+        </section>
+        <section id="movie-details" style="display: none;">
+            <button id="go-back">Go Back</button>
+            <div id="movie-detail" class="movie-detail"></div>
+        </section>
+            
+
+
+       
+        <div id="notification-popup" class="popup">
+            Added to favourites!
+          </div>
+          
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
