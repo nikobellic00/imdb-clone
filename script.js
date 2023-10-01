@@ -57,7 +57,7 @@ async function searchMovies(searchTerm) {
 // Function to fetch and display movie details
 async function showMovieDetails(imdbID) {
     try {
-        const detailsResponse = await fetch(`http://www.omdbapi.com/?i=${imdbID}&apikey=92980800`);
+        const detailsResponse = await fetch(`https://www.omdbapi.com/?i=${imdbID}&apikey=92980800`);
         const detailsData = await detailsResponse.json();
 
         // Create a detailed view of the movie
