@@ -15,7 +15,7 @@ searchInput.addEventListener('input', () => {
 // Function to fetch a list of movies based on search 
 async function searchMovies(searchTerm) {
     try {
-        const response = await fetch(`http://www.omdbapi.com/?s=${searchTerm}&apikey=92980800`);
+        const response = await fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=92980800`);
         const data = await response.json();
 
         if (data.Search) {
